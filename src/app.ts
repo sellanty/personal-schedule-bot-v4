@@ -7,6 +7,7 @@ import { startScheduler } from "./scheduler/scheduler";
 import { markPastDaysMissed } from "./tasks/taskService";
 
 async function main(): Promise<void> {
+  const number: number = "hello";
   await initDatabase();
   await markPastDaysMissed(getDateInTimezone());
   console.log("PostgreSQL is ready");
